@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Ehsan Sekhaveti</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #6c757d;
+            margin: 0 15px;
+        }
+        .scrollable-div {
+            width:100%;
+            height: 530px;
+            max-height: 1000px;
+            overflow-y: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            overflow-x: hidden;
+        }
+        .scrollable-div::-webkit-scrollbar {
+            display: none;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        a:hover {
+            color:black;
+            text-decoration: none
+        }
+        .doctor-div{
+            width: 100%;
+            max-width: 380px;
+            height: auto;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 10px 10px 10px 10px;
+            color: black;
+        }
+        .appoinment-div{
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            background-color: white;
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 10px 10px 10px 10px;
+            margin:10px;
+        }
+        .btn-primary {
+            background-color: #6C5CE7;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            width: 100%;
+        }
+        .horizontal-line {
+            border-top: 1px solid #000;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .icon-text-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon-text-container img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center bg-light" style="height: 100vh;">
+<div class="container-custom parent" style="padding:20px;align-content: center">
+    <div class="search-bar">
+
+        <input type="text" placeholder="Search">
+        <span class="filter-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85a1.007 1.007 0 0 0-.115-.098zm-5.292-.344a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z"/>
+            </svg>
+        </span>
+    </div>
+
+    <!---------------------------------------------------------------------->
+    <div  class="scrollable-div">
+        <div class="doctor-div" >
+            <div style="padding: 20px 20px 20px 20px;">
+                <div class="row text-center" style="padding-left: 15px;overflow: auto;">
+                    <div class="col-3">
+                        <div >
+                            <img src="image/22.jpg" alt="Tooth" style="width: 70px;height: 70px;border-radius: 50%">
+                        </div>
+                    </div>
+                    <div width="70%" style="text-align: left;margin-left: 20px">
+                        <div width="70%">
+                            <p style="font-weight: bold">Dr.Ehsan Sekhaveti</p>
+                            <p style="opacity: 70%">Cardiologist</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------------------------------------------->
+
+        <div class="appoinment-div">
+            <h1 class="h6 bold-text" style="font-weight: bold">Appointment scheduling</h1>
+            <div class="horizontal-line"></div>
+            <h7>Monday 01:00 PM - 04:00 PM</h7>
+            <h7>Wednesday 09:00 AM - 01:00 PM</h7>
+            <form style="margin-top:10px" action="#">
+                <button type="submit" class="btn btn-primary" >Booking an appointment</button>
+            </form>
+        </div>
+
+        <!--------------------------------------------------------------------------->
+
+        <div class="appoinment-div">
+            <h1 class="h6 bold-text" style="font-weight: bold">Address And Phone Number</h1>
+            <div class="horizontal-line"></div>
+            <div class="icon-text-container" style="margin:5px">
+                <img src="image/phone-call.png" alt="Icon">
+                <span>+98 9128898648</span>
+            </div>
+            <div class="icon-text-container">
+                <img src="image/location.png" alt="Icon">
+                <span>Tehran, Hemmat, Milad Hospital </span>
+            </div>
+        </div>
+
+        <!--------------------------------------------------------------------------->
+
+        <div class="bottom-nav child" >
+            <a href="home.html" class="active nav-item">
+                <img src="image/home.png" alt="Home" class="icon" style="background: none;">
+                Home
+            </a>
+            <a href="#" class="nav-item">
+                <img src="image/calendar.png" alt="Appointment" class="icon" style="background: none;">
+                Appointment
+            </a>
+            <a href="#" class="nav-item">
+                <img src="image/trolley.png" alt="Store" class="icon" style="background: none;">
+                Store
+            </a>
+            <a href="#" class="nav-item">
+                <img src="image/chat.png" alt="Message" class="icon" style="background: none;">
+                Message
+            </a>
+            <a href="#" class="nav-item">
+                <img src="image/user.png" alt="My Profile" class="icon" style="background: none;">
+                My Profile
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
